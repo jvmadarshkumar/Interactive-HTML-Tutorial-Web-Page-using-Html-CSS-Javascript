@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Alibaba aur 40 Codes</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(135deg, #6a0dad, #ff4a3d); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { 
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            padding: 40px; 
+            max-width: 400px; 
+            width: 100%; 
+            text-align: center;
+        }
+        h1 { 
+            color: #4a148c; 
+            margin-bottom: 20px; 
+        }
+        label { 
+            display: block; 
+            margin: 15px 0 5px; 
+            text-align: left; 
+            color: #333; 
+        }
+        input[type="text"], input[type="email"], input[type="password"] { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box;
+        }
+        input[type="submit"] { 
+            background-color: #4a148c; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover { 
+            background-color: #6a1b9a; 
+        }
+        .error { 
+            color: red; 
+            font-size: 12px; 
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+    
+        <form id="myform" action="home.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" onkeyup="validateName()" required>
+            <div class="message" id="nameMessage"></div>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" onkeyup="validateEmail()" required>
+            <div class="message" id="emailMessage"></div>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" onkeyup="validatePassword()" required>
+            <div class="message" id="passwordMessage"></div>
+    
+            <input type="submit" value="Submit form">
+        </form>
+    </div>
+    
+    <script src="./form.js">
+    
+    </script>
+</body>
+</html>
